@@ -1,0 +1,36 @@
+.login-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.email-input {
+    padding: 10px;
+    margin: 0 8px;
+    border: gray solid 2px;
+    border-radius: 5px;
+}
+.password-input {
+    padding: 10px;
+    margin: 0 8px;
+    border: gray solid 2px;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #333333;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    width: 96px;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background-color: grey;
+}
