@@ -4,9 +4,10 @@
 }
 
 .button {
-    background-color: lime;
+    background-color: #029e74;
+    background: #029e74;
     border-radius: 100px;
-    color: #333333;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-weight: bold;
@@ -14,10 +15,8 @@
     margin: 32px 10%;
 }
 
-.button:active{
-    margin-top: 38px;
-}
 .button:hover{
     cursor: pointer;
-    color: darkgray;
+    background: #03a87c;
+    background-color: #03a87c;
 }
