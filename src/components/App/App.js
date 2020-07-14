@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
 import Navigation from '../navigation/Navigation';
-import NewArticleButton from '../new-article-button/NewArticleButton';
-import Articles from '../articles/articles';
+import HomePage from '../homePage/HomePage';
 
 function App() {
   return (
     <div>
         <Navigation />
-        <NewArticleButton />
-        <Articles />
+        <HomePage />
     </div> 
   );
 }
