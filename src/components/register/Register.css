@@ -1,0 +1,47 @@
+.register-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    margin: 16px 32px;
+}
+.separator{
+    width: 50px;
+}
+.form-input {
+    font-size: 18px;
+    border: #bdc7d8 solid 1px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 10px 10px 0px 0px;
+}
+
+.date-text {
+    color: gray;
+    margin: 10px 0px 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-input {
+    border: gray solid 2px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 4px;
+    padding: 0;
+}
+
+.gender-text {
+    color: gray;
+    margin: 10px 0px 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.radio-container {
+    display: inline-block;
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 4px;
+    padding: 0;
+}
