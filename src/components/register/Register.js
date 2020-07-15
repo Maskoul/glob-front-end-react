@@ -8,7 +8,7 @@ const Register = () => {
         <div className='register-container'>
             <div>
                 <div>
-                    Glob helps to find great things to read and share your ideas in the world.
+                    <h1>Glob helps to find great things to read and share your ideas in the world.</h1>
                 </div>
                 <div>
                     <img alt='blog' src={blog}></img>
@@ -17,11 +17,12 @@ const Register = () => {
 
             <div className='separator'></div>
 
-            <div>
-                <div>Create new account</div>
-                <div>
-                    <input className='form-input' type='text' placeholder='First Name' />
-                    <input className='form-input' type='text' placeholder='Last Name' />
+            <div className='form-container'>
+                <div><h2>Create an account</h2></div>
+                <div className='form-input-name-block'>
+                    <input className='form-input form-input-name ' type='text' placeholder='First Name' />
+                    <div className='small-separator'></div>
+                    <input className='form-input form-input-name ' type='text' placeholder='Last Name' />
                 </div>
                 <div>
                     <input className='form-input' type='Email' placeholder='Email' />
@@ -47,6 +48,9 @@ const Register = () => {
                         </label>
                     </span>
                     
+                </div>
+                <div>
+                    <button className='signup-button'>Sign Up</button>
                 </div>
             </div>
         </div>
