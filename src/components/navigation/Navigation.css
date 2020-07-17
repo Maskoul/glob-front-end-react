@@ -12,6 +12,10 @@
     justify-content: center;
     width: 100%;
 }
+.nav_bar_components {
+    width: 100%;
+    margin-left: 32px;
+}
 .logo {
     border: #333333 solid 3px;
     border-radius: 5px;
@@ -25,7 +29,7 @@
 }
 
 .logo:hover{
-    cursor: pointer;
+    cursor: default;
 }
 
 .nav_item {
