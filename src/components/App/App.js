@@ -53,11 +53,15 @@ class App extends React.Component {
 
     return (
       <div>
-          <Navigation isSignIn={this.state.isSignIn} />
+          <Navigation 
+            isSignIn={this.state.isSignIn}
+            handleChangeRoute={this.handleChangeRoute} 
+            loudUser={this.loudUser}
+          />
 
           {
             this.state.route === 'home' &&
-           <HomePage />
+           <HomePage/>
           }
    
           {

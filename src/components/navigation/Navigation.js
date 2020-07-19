@@ -15,16 +15,19 @@ const Navigation = (props) => {
             {
                 props.isSignIn ? 
                 <div  className='flex_nav_items'>
-                <div className='nav_bar_components'>
-                    <span className='nav_item'>Home</span>
-                    <span className='nav_item'>Profile</span>            
-                </div>
-                <div className='flex_log_out_button'>
-                    <button className='log_out_button'>Log out</button>
-                </div>
+                    <div className='nav_bar_components'>
+                        <span className='nav_item'>Home</span>
+                        <span className='nav_item'>Profile</span>            
+                    </div>
+                    <div className='flex_log_out_button'>
+                        <button className='log_out_button'>Log out</button>
+                    </div>
                 </div>
             :
-                <LogIn />
+                <LogIn        
+                    handleChangeRoute={props.handleChangeRoute} 
+                    loudUser={props.loudUser}
+                />
         }
 
             
