@@ -1,0 +1,62 @@
+textarea {
+    resize: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+.container{
+    margin: 32px 8px ;
+}
+.box {
+    border: #bdc7d8 solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.titleInput {
+}
+
+.subTitleInput {
+    font-size: 20px;
+    font-weight: normal;
+}
+.articleInput {
+    font-size: 18px;
+    font-weight: inherit;
+
+}
+
+.publishButton {
+    background-color: #029e74;
+    background: #029e74;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-right: 8px;
+    padding: 5px;
+    width: 200px;
+
+}
+.publishButton:hover{
+    cursor: pointer;
+    background: #03a87c;
+    background-color: #03a87c;
+}
+.cancelButton {
+    border: none;
+    background: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    width: 200px;
+    box-shadow: 0 0 3px #029e74;
+}
+.cancelButton:hover {
+    cursor: pointer;
+    background-color: lightcyan;
+}
