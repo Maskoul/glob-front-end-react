@@ -5,6 +5,9 @@ import LogIn from '../login/LogIn';
 
 const Navigation = (props) => {
 
+    const onLogoutSubmit = () => {
+        props.handleChangeRoute("siginout")
+    }
     return (
 
         <nav className='nav_container'>
@@ -20,7 +23,7 @@ const Navigation = (props) => {
                         <span className='nav_item'>Profile</span>            
                     </div>
                     <div className='flex_log_out_button'>
-                        <button className='log_out_button'>Log out</button>
+                        <button className='log_out_button' onClick={onLogoutSubmit}>Log out</button>
                     </div>
                 </div>
             :
