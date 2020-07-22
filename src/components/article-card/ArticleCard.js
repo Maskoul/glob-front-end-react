@@ -1,16 +1,15 @@
 import React from 'react';
 import './ArticleCard.css';
 
-const ArticleCard = () => {
+const ArticleCard = (props) => {
+    const  {title, sub_title, author, date_created}= props.article
     return (
         <div className='container'>
-            <h2 className='title'>Title</h2>
-            <h2 className='subTitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
-             </h2>
+            <h2 className='title'>{title}</h2>
+            <h2 className='subTitle'>{sub_title}</h2>
              <div className='container_date_name'>
-                <h3 className='date'>2002-12-21</h3>
-                <h3 className='name'>Name</h3>
+                <h3 className='date'>{date_created}</h3>
+                <h3 className='name'>{author}</h3>
              </div>
 
         </div>

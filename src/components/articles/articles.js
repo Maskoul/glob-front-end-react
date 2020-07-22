@@ -1,16 +1,14 @@
 import React from 'react';
 import ArticleCard from '../article-card/ArticleCard';
 
-const Articles = () => {
+const Articles = (props) => {
     return (
         <div>
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
-            <ArticleCard />
+            {
+                props.articles.length > 0 &&
+                props.articles.map((article) => <ArticleCard key={article.pid} article={article} />)
+
+            }
 
         </div>
     )

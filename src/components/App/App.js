@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from '../navigation/Navigation';
 import HomePage from '../homePage/HomePage';
 import Register from '../register/Register';
+import AddNewArticle from '../add-new-article/AddNewArticle';
 
 
 const initialState = {
@@ -15,7 +16,8 @@ const initialState = {
               email: '',
               birthDay:'',
               gender:'',
-              joined: ''}
+              joined: ''
+            }
 }
 
 class App extends React.Component {
@@ -61,9 +63,13 @@ class App extends React.Component {
 
           {
             this.state.route === 'home' &&
-           <HomePage/>
+           <HomePage handleChangeRoute={this.handleChangeRoute}/>
           }
-   
+          
+          {
+            this.state.route === 'addNewArticle' &&
+            <AddNewArticle user={this.state.user} handleChangeRoute={this.handleChangeRoute}  />
+          }
           {
             this.state.route === 'signout' && 
             <Register
